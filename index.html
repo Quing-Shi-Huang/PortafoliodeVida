@@ -19,13 +19,17 @@
     <!-- Navegación -->
     <nav class="navbar">
         <div class="logo">Mi Vida</div>
-        <ul class="nav-links">
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+
 
     <!-- Banner principal -->
     <section class="banner">
@@ -94,7 +98,8 @@
                     Tengo una fuerte base en vulcanización y electricidad, además de conocimientos en mecánica
                     y carpintería. Me caracterizo por ser proactivo, dedicado y siempre dispuesto a seguir aprendiendo.
 
-                    <br><br> Futuro Nombre de Mi Empresa sera <br> <span style="font-style: italic; color: #c62828;">"Vigilantes"</span> 
+                    <br><br> Futuro Nombre de Mi Empresa sera <br> <span
+                        style="font-style: italic; color: #c62828;">"Vigilantes"</span>
                 </p>
             </div>
 
@@ -226,11 +231,52 @@
 
             <div class="frase-card">
                 <img src="image/gay.gif" alt="Might Guy" class="frase-img" />
-                <p class="quote">"Si tienes Razon, todo el esfuerzo es Inutil, si no crees en tu mismo. No dejes que
+                <p class="quote">"Si tienes Razon, todo el esfuerzo es Inutil, si no crees en ti mismo. No dejes que
                     nada te Desvie del camino que te has fijado y mantelo hasta el final. Se fiel a el y Enorgulleseme
                     se todo lo que quieras ser"</p>
                 <span class="author">— Might Guy (Naruto)</span>
             </div>
+            <div class="frase-card">
+                <img src="image/Buda.gif" alt="Buda" class="frase-img" />
+                <p class="quote">"Enemigos y Amigos, Bueno y Malo , Dioses y Humanos, Nada de eso importa en todo este
+                    Universo a lo largo y ancho solo soy yo"</p>
+                <span class="author">— Buda (Record of Ragnarok)</span>
+            </div>
+
+            <div class="frase-card">
+                <img src="image/Wasuke Itadori.gif" alt="Might Guy" class="frase-img" />
+                <p class="quote">"Eres un chico fuerte ayuda a los demas, no tiene que ser a todo el mundo pero ayuda a
+                    quien puedas.. Puedes dudar si quires, pero nunca esperes nada a cambio.. Solo te pido que ayudes a
+                    otros cuando puedas, Cuando mueras deberias estar rodeado de gente.. No acabes como yo!! "</p>
+                <span class="author">— Wasuke Itadori (Jujutsu Kaisen)</span>
+            </div>
+
+            <div class="frase-card">
+                <img src="image/All Might.gif" alt="Might Guy" class="frase-img" />
+                <p class="quote">"Cuando salvas a alguién, significa que esa persona paso por algo terrible.. Asi que
+                    los verdaderos Heroes, no solo salvan vidas... tambien corazones !Creo en eso¡ No importa cuan
+                    asustado estes debes sonreir pra mostrar que estas bien.. En este mundo. Los que sonrien son los mas
+                    fuertes Toshinori"</p>
+                <span class="author">— Might Guy (My Hero Academia)</span>
+            </div>
+
+            <div class="frase-card">
+                <img src="image/Silver Fang.gif" alt="Might Guy" class="frase-img" />
+                <p class="quote">"Primero que nada Calmate.. Creo que has perdido la compostura, calma tu mente, eres
+                    muy joven para pensar en el fracaso. Cuando tu espalda este contra la pared debes tomar accion..
+                    Pensar de mas no Cambia en Nada!"</p>
+                <span class="author">— Silver Fang (One Punch Man)</span>
+            </div>
+
+            <div class="frase-card">
+                <img src="image/Kanon.gif" alt="Might Guy" class="frase-img" />
+                <p class="quote">"La Maldad me cego.. En realidad no tengo derecho de hablar sobre la justicia... Pero
+                    aun asi, si es un crimen matar a los enemigos.. Entonces liberemonos de todos los malvados del
+                    mundo, y Despues aceptemos el castigo de Dios..!"</p>
+                <span class="author">— Kanon de Geminis (Caballeros del Zodíaco)</span>
+            </div>
+
+
 
         </div>
     </section>
@@ -256,8 +302,8 @@
                             class="fab fa-facebook-f"></i></a>
                     <a href="https://www.tiktok.com/@ivangelmusix0" target="_blank" title="TikTok"><i
                             class="fab fa-tiktok"></i></a>
-                    <a href="https://www.youtube.com/channel/UCWkSfkS8oLhObypu5g_pkeA" target="_blank" title="YouTube"><i
-                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/channel/UCWkSfkS8oLhObypu5g_pkeA" target="_blank"
+                        title="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
 
@@ -277,6 +323,15 @@
 
 
     <script src="script.js"></script>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
 </body>
 
 </html>
